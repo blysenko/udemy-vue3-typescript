@@ -6,7 +6,7 @@ services:
       DB_HOST: db
       DB_DATABASE: admin
       DB_USERNAME: root
-      DB_password: root
+      DB_PASSWORD: root
     ports:
       - 8000:8000
     depends_on:
