@@ -28,7 +28,7 @@ export default {
     const passwordConfirm = ref('');
     const router = useRouter();
     const submit = async () => {
-      await axios.post('http://localhost:8080/api/register', {
+      await axios.post('register', {
         first: firstName.value,
         last: lastName.value,
         email: email.value,
@@ -36,7 +36,7 @@ export default {
         password_confirm: passwordConfirm.value
       })
       
-      // await router.push('/login');
+      await router.push('/login');
     }
 
     return {
