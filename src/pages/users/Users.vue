@@ -24,9 +24,7 @@
             <router-link :to="`/users/${user.id}/edit`" class="btn btn-sm btm-outline-secondary" @click="del(user.id)">Edit</router-link>
             <a href="javascript:(void(0))" class="btn btn-sm btm-outline-secondary" @click="del(user.id)">Delete</a>
           </div>
-          <mr-2></mr-2>
         </td>
-        <td></td>
       </tr>
       </tbody>
     </table>
