@@ -1,6 +1,6 @@
 <template>
   <div class="pt-3 pb-2 mb-3 border-bottom">
-    <router-link to="/users/create" class="btn btn-sm btn-outline-secondary">Add</router-link>
+    <router-link to="/roles/create" class="btn btn-sm btn-outline-secondary">Add</router-link>
   </div>
   <div class="table-responsive">
     <table class="table table-striped table-sm">
@@ -54,7 +54,7 @@ export default {
       if(confirm("Are you sure?")) {
         await axios.delete(`roles/${id}`);
 
-        roles.value = roles.value.filter((r: Role) => r.id !== id); // цікавий момент
+        roles.value = roles.value.filter((r: Role) => r.id !== id); // set type of r: to Role
       }
     }
 
