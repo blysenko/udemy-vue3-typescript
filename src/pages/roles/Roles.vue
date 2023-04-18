@@ -26,17 +26,6 @@
       </tbody>
     </table>
   </div>
-
-  <nav>
-    <ul class="pagination">
-      <li class="page-item">
-        <a class="page-link" href="javascript:(void(0))" @click="prev">Previous</a>
-      </li>
-      <li class="page-item">
-        <a class="page-link" href="javascript:(void(0))" @click="next">Next</a>
-      </li>
-    </ul>
-  </nav>
 </template>
 
 <script lang="ts">
