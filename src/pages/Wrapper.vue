@@ -32,7 +32,7 @@ export default {
       try {
         const {data} = await axios.get('user')
       } catch (e) {
-        await router.push('/login');
+       // await router.push('/login');
         console.log('rputer push /login');
       }
     });
