@@ -52,6 +52,11 @@ export default {
 
       roles.value = data;
     })
+
+      return {
+        roles,
+        del
+      }
   }
 }
 </script>

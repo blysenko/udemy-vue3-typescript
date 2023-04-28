@@ -4,20 +4,27 @@
       <ul class="nav flex-column">
         <li class="nav-item">
           <router-link to="/" class="nav-link" exact-active-class="active">
-            <span data-feather="home" class="align-text-bottom"></span>
             Dashboard
           </router-link>
         </li>
         <li class="nav-item">
           <router-link to="/users" active-class="active" class="nav-link">
-            <span data-feather="home" class="align-text-bottom"></span>
             Users
           </router-link>
         </li>
         <li class="nav-item">
           <router-link to="/roles" active-class="active" class="nav-link">
-            <span data-feather="home" class="align-text-bottom"></span>
             Roles
+          </router-link>
+        </li>
+        <li class="nav-item">
+            <router-link to="/products" active-class="active" class="nav-link">
+                Products
+            </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/orders" active-class="active" class="nav-link">
+            Orders
           </router-link>
         </li>
       </ul>
@@ -30,7 +37,3 @@ export default {
   name: "MenuList"
 }
 </script>
-
-<style scoped>
-
-</style>

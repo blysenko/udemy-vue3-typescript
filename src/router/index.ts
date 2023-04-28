@@ -12,6 +12,7 @@ import EditRoles from "@/pages/roles/EditRoles.vue";
 import Products from "@/pages/products/Products.vue";
 import ProductCreate from "@/pages/products/ProductCreate.vue";
 import ProductEdit from "@/pages/products/ProductEdit.vue";
+import Orders from "@/pages/orders/Orders.vue";
 
 
 const routes: Array<RouteRecordRaw> = [
@@ -25,13 +26,14 @@ const routes: Array<RouteRecordRaw> = [
       {path: '', component: Dashboard},
       {path: '/users', component: Users},
       {path: '/users/create', component: UserCreate},
-      {path: '/users/edit', component: UserEdit},
+      {path: '/users/:id/edit', component: UserEdit},
       {path: '/roles', component: Roles},
       {path: '/roles/create', component: RoleCreate},
       {path: '/roles/:id/edit', component: EditRoles},
       {path: '/products', component: Products},
       {path: '/products/create', component: ProductCreate},
-      {path: '/products/:id/edit', component: ProductEdit}
+      {path: '/products/:id/edit', component: ProductEdit},
+      {path: '/orders', component: Orders}
     ]
   }
 ]
