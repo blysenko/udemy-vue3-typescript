@@ -33,7 +33,7 @@ export default {
         }
 
         const next = () => {
-            if(page.value < props.lastPage.value) {
+            if(page.value < props.lastPage) {
                 page.value++
             }
         }
@@ -44,7 +44,3 @@ export default {
     }
 }
 </script>
-
-<style scoped>
-
-</style>

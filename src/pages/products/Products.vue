@@ -44,6 +44,7 @@ import Paginator from "@/components/Paginator.vue";
 
 export default {
     name: "ProductsList",
+    components: {Paginator},
     setup() {
         const products = ref([])
         const lastPage = ref(0)
@@ -58,7 +59,7 @@ export default {
 
         const del = async (id: number) => {
             if(confirm("Are you sure?")) {
-                await axios.delete(`products/${id}`); // delete from back-side
+                await axios.delete(`/products/${id}`); // delete from back-side
 
                 products.value = products.value.filter((p: Product) => p.id !== id); // set type of p: to Products - delete from front-side
             }
@@ -74,7 +75,3 @@ export default {
 
 }
 </script>
-
-<style scoped>
-
-</style>
