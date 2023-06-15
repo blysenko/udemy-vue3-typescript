@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "@types/axios": "^0.14.0",
+    "@types/c3": "^0.7.8",
+    "@vue/compiler-sfc": "^3.3.4",
     "axios": "^1.2.1",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
