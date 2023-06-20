@@ -6,13 +6,14 @@ import UserEdit from '@/pages/users/UserEdit.vue';
 import Register from '@/pages/Register.vue';
 import Wrapper from "@/pages/Wrapper.vue";
 import Login from "@/pages/Login.vue";
-import Roles from "@/pages/roles/Roles.vue"
+import Roles from "@/pages/roles/Roles.vue";
 import RoleCreate from "@/pages/roles/RoleCreate.vue";
 import EditRoles from "@/pages/roles/EditRoles.vue";
 import Products from "@/pages/products/Products.vue";
 import ProductCreate from "@/pages/products/ProductCreate.vue";
 import ProductEdit from "@/pages/products/ProductEdit.vue";
 import Orders from "@/pages/orders/Orders.vue";
+import Profile from "@/pages/Profile.vue";
 
 
 const routes: Array<RouteRecordRaw> = [
@@ -33,7 +34,8 @@ const routes: Array<RouteRecordRaw> = [
       {path: '/products', component: Products},
       {path: '/products/create', component: ProductCreate},
       {path: '/products/:id/edit', component: ProductEdit},
-      {path: '/orders', component: Orders}
+      {path: '/orders', component: Orders},
+      {path: '/profile', component: Profile}
     ]
   }
 ]
